@@ -1,0 +1,19 @@
+.bg-portfolio {
+  background-color: #1abc9c;
+}
+
+.layer {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main:hover .layer {
+  opacity: 1;
+  visibility: visible;
+}
+
+.line {
+  background-color: black;
+  height: 4px;
+  width: 80px;
+}

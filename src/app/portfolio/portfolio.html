@@ -1,0 +1,117 @@
+<div class="text-center py-3 pt-5">
+  <h2 class="pt-3 text-uppercase">portfolio component</h2>
+  <div class="d-flex justify-content-center mb-3">
+    <div class="line me-2"></div>
+    <i class="fa-solid fa-star"></i>
+    <div class="line ms-2"></div>
+  </div>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-md-4">
+        <div
+          (click)="showimg('/images/imgi_1_poert1.png')"
+          class="position-relative main"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <img src="/images/imgi_1_poert1.png" alt="" class="w-100 rounded-3" />
+          <div
+            class="layer bg-portfolio position-absolute start-0 top-0 end-0 bottom-0 d-flex justify-content-center align-items-center opacity-75"
+          >
+            <i class="fa-solid fa-plus text-white display-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          (click)="showimg('/images/imgi_2_port2.png')"
+          class="position-relative main"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <img src="/images/imgi_2_port2.png" alt="" class="w-100 rounded-3" />
+          <div
+            class="layer bg-portfolio position-absolute start-0 top-0 end-0 bottom-0 d-flex justify-content-center align-items-center opacity-75"
+          >
+            <i class="fa-solid fa-plus text-white display-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          (click)="showimg('/images/imgi_3_port3.png')"
+          class="position-relative main"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <img src="/images/imgi_3_port3.png" alt="" class="w-100 rounded-3" />
+          <div
+            class="layer bg-portfolio position-absolute start-0 top-0 end-0 bottom-0 d-flex justify-content-center align-items-center opacity-75"
+          >
+            <i class="fa-solid fa-plus text-white display-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          (click)="showimg('/images/imgi_1_poert1.png')"
+          class="position-relative main"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <img src="/images/imgi_1_poert1.png" alt="" class="w-100 rounded-3" />
+          <div
+            class="layer bg-portfolio position-absolute start-0 top-0 end-0 bottom-0 d-flex justify-content-center align-items-center opacity-75"
+          >
+            <i class="fa-solid fa-plus text-white display-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          (click)="showimg('/images/imgi_2_port2.png')"
+          class="position-relative main"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <img src="/images/imgi_2_port2.png" alt="" class="w-100 rounded-3" />
+          <div
+            class="layer bg-portfolio position-absolute start-0 top-0 end-0 bottom-0 d-flex justify-content-center align-items-center opacity-75"
+          >
+            <i class="fa-solid fa-plus text-white display-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          (click)="showimg('/images/imgi_3_port3.png')"
+          class="position-relative main"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <img src="/images/imgi_3_port3.png" alt="" class="w-100 rounded-3" />
+          <div
+            class="layer bg-portfolio position-absolute start-0 top-0 end-0 bottom-0 d-flex justify-content-center align-items-center opacity-75"
+          >
+            <i class="fa-solid fa-plus text-white display-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-body">
+      <img [src]="myimg" class="w-100" alt="modal-img" />
+    </div>
+  </div>
+</div>
